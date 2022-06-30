@@ -1,6 +1,4 @@
 const testFun = (str) => {
-  console.log(str);
-
   return str + 123
 
 }
