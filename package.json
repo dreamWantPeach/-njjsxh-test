@@ -7,18 +7,14 @@
   "browser": "lib/bundle.browser.js",
   "types": "types/index.d.ts",
   "private": false,
-  "husky":{
-    "hooks": {
-      "pre-commit":"yarn jest"
-    }
-  },
   "scripts": {
     "build": "rollup -c",
     "build:types": "tsc",
     "test": "jest --passWithNoTests",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postpack": "pinst --enable",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@eslint/create-config": "^0.2.0",
@@ -29,7 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "eslint": "^8.18.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "jest": "^28.1.2",
     "pinst": "^3.0.0",
     "rollup": "^2.75.7",
