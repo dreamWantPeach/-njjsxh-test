@@ -7,8 +7,10 @@
   "browser": "lib/bundle.browser.js",
   "types": "types/index.d.ts",
   "private": false,
-  "hooks": {
-    "pre-commit":"yarn jest"
+  "husky":{
+    "hooks": {
+      "pre-commit":"yarn jest"
+    }
   },
   "scripts": {
     "build": "rollup -c",
