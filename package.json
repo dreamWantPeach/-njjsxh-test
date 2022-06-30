@@ -1,0 +1,30 @@
+{
+  "name": "@njjsxh/test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/bundle.cjs.js",
+  "module": "lib/bundle.esm.js",
+  "browser": "lib/bundle.browser.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "build:types": "tsc",
+    "test": "jest --passWithNoTests"
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^0.2.0",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/jest": "^28.1.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "pinst": "^3.0.0",
+    "rollup": "^2.75.7",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
