@@ -6,10 +6,17 @@
   "module": "lib/bundle.esm.js",
   "browser": "lib/bundle.browser.js",
   "types": "types/index.d.ts",
+  "private": false,
+  "hooks": {
+    "pre-commit":"yarn jest"
+  },
   "scripts": {
     "build": "rollup -c",
     "build:types": "tsc",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "devDependencies": {
     "@eslint/create-config": "^0.2.0",
